@@ -1,6 +1,6 @@
 import { Bot } from 'grammy';
 
-const BOT_TOKEN = '7867964761:AAHKhp8x4HCO2O48G0QDz6UA8FEfifQXTok';
+const BOT_TOKEN = 'ЗАПОЛНИТЬ: токен бота';
 
 export const bot = new Bot(BOT_TOKEN);
 
