@@ -3,17 +3,25 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "deploy": "wrangler deploy",
+    "deploy": "npm run deploy:wrangler && npm run webHook",
+    "deploy:wrangler": "wrangler deploy",
+    "webHook": "curl https://api.telegram.org/bot7904678346:AAHU-WDWye7D3znSQigUqa7fvHp1DmmbSjA/setWebhook?url=tg-bot-for-lesha.sukhanov-licey.workers.dev",
     "dev": "wrangler dev",
-    "start": "wrangler dev",
+    "watch": "nodemon --exec \"node --require ts-node/register src/index-dev.ts\"",
     "test": "vitest",
     "cf-typegen": "wrangler types"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.5.2",
-    "@cloudflare/workers-types": "^4.20241022.0",
+    "@cloudflare/workers-types": "^4.20241011.0",
+    "@types/node": "^22.7.5",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
     "typescript": "^5.5.2",
     "vitest": "2.0.5",
     "wrangler": "^3.60.3"
+  },
+  "dependencies": {
+    "grammy": "^1.30.0"
   }
 }

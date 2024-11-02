@@ -1,7 +1,7 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "default-tg-bot"
-main = "src/index.ts"
-compatibility_date = "2024-10-22"
+name = "tg-bot-for-lesha"
+main = "src/index-wrangler.ts"
+compatibility_date = "2024-10-11"
 compatibility_flags = ["nodejs_compat"]
 
 # Workers Logs
@@ -23,7 +23,7 @@ enabled = true
 # Note: Use secrets to store sensitive data.
 # - https://developers.cloudflare.com/workers/configuration/secrets/
 # [vars]
-# MY_VARIABLE = "production_value"
+# APi_KEY = "7904678346:AAHU-WDWye7D3znSQigUqa7fvHp1DmmbSjA"
 
 # Bind the Workers AI model catalog. Run machine learning models, powered by serverless GPUs, on Cloudflare’s global network
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#workers-ai
