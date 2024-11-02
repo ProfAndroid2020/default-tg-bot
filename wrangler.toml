@@ -1,5 +1,5 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "ЗАПОЛНИТЬ: Имя твоего бота на CloudFlare"
+name = "<ЗАПОЛНИТЬ: Имя твоего бота на CloudFlare>"
 main = "src/index-wrangler.ts"
 compatibility_date = "2024-10-11"
 compatibility_flags = ["nodejs_compat"]
